@@ -6,6 +6,7 @@ OVERVIEW
 This program processes words from an input file to determine the longest and second-longest compounded words. A compounded word is one that can be formed using other words from the list. Additionally, the program measures the time taken to process another input file. The design leverages a HashSet for fast lookups and recursive checks for compound word validation.
 
 
+
 EXECUTION STEPS:
 
 1.Prepare Input Files:
@@ -31,6 +32,7 @@ EXECUTION STEPS:
 -Time taken to process Input_02.txt: 500 ms
 
 
+
 DESIGN AND DECISION APPROACH:
 
 -Efficiency: A HashSet is used for quick word lookups.
@@ -48,6 +50,7 @@ DESIGN AND DECISION APPROACH:
 OVERVIEW
 
 This program identifies the longest and second-longest compounded words from a given input file and measures the time taken to process the file. A compounded word is one that can be formed using other words from the input list. The program is efficient, leveraging HashSet for fast lookups and streams for concise processing.
+
 
 
 EXECUTION STEPS:
@@ -73,6 +76,7 @@ EXECUTION STEPS:
 -Time taken to process Input_02.txt: 8000 ms  
 
 
+
 DESIGN AND DECISION APPROACH:
 
 -Efficient Data Storage: A HashSet is used to store words for O(1) lookup time.
@@ -82,6 +86,7 @@ DESIGN AND DECISION APPROACH:
 -Optimized Sorting: The compounded words are sorted by length in descending order.
 
 -Performance Measurement: The program calculates the time taken to read and process the file using System.nanoTime().
+
 
 
 
