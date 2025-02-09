@@ -9,26 +9,36 @@ This program processes words from an input file to determine the longest and sec
 EXECUTION STEPS:
 
 1.Prepare Input Files:
+
 -Ensure Input_01.txt contains a list of words, one per line.
+
 -Ensure Input_02.txt is available for processing time measurement.
 
 2.Compile the Java Program:
+
 -javac Main.java
 
 3.Run the Program:
+
 -java Main
 
 4.Expected Output:
+
 -The longest compounded word: ratcatdogcat
+
 -The second-longest compounded word: catsdogcats
+
 -Time taken to process Input_02.txt: 500 ms
 
 
 DESIGN AND DECISION APPROACH:
 
 -Efficiency: A HashSet is used for quick word lookups.
+
 -Sorting: Compound words are sorted by length in descending order.
+
 -Performance Measurement: Processing time for Input_02.txt is measured using System.nanoTime().
+
 -Recursive Approach: The function isCompound() checks if a word can be formed by combining other words in the list.
 
 
@@ -43,25 +53,34 @@ This program identifies the longest and second-longest compounded words from a g
 EXECUTION STEPS:
 
 1.Prepare Input File:
+
 -Ensure Input_02.txt contains a list of words, one per line.
 
 2.Compile the Java Program:
+
 -javac Main.java
 
 3.Run the Program:
+
 -java Main
 
 4.Expected Output:
+
 -Longest compounded word: exampleword  
--Second longest compounded word: anotherword  
+
+-Second longest compounded word: anotherword 
+
 -Time taken to process Input_02.txt: 8000 ms  
 
 
 DESIGN AND DECISION APPROACH:
 
 -Efficient Data Storage: A HashSet is used to store words for O(1) lookup time.
+
 -Compound Word Detection: A recursive approach checks if a word can be formed using smaller words from the set.
+
 -Optimized Sorting: The compounded words are sorted by length in descending order.
+
 -Performance Measurement: The program calculates the time taken to read and process the file using System.nanoTime().
 
 
